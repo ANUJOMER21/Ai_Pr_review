@@ -15,7 +15,7 @@ class EnhancedAIReviewer:
     def __init__(self, api_key: str):
         self.client = anthropic.Anthropic(api_key=api_key)
         # FIXED: Use correct model name
-        self.model = "claude-3-5-sonnet-20240620"  # or "claude-3-5-sonnet-latest"
+        self.model = "claude-sonnet-4-20250514"  # or "claude-3-5-sonnet-latest"
         self.max_file_size = 50000
         self.vulnerability_patterns = self._load_vulnerability_patterns()
 
@@ -275,7 +275,7 @@ class EnhancedAIReviewer:
                 logger.error(f"Model {self.model} not found. Please check available models.")
                 # Try fallback model
                 try:
-                    self.model = "claude-3-5-sonnet-latest"
+                    self.model = "claude-sonnet-4-20250514"
                     response = self.client.messages.create(
                         model=self.model,
                         max_tokens=8000,
