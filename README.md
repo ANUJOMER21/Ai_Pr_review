@@ -6,8 +6,8 @@
 A modern Streamlit web application that integrates GitHub for repository management and Anthropic's Claude AI for automated code reviews. It analyzes PRs for security vulnerabilities, code quality, and provides actionable recommendations. Built with SQLite for persistence, it's lightweight and easy to deploy.
 
 - **Current Version**: 1.0.0 (Released: September 18, 2025)
-- **Author**: [Your Name or xAI Assistant]
-- **Demo**: [Link to deployed app, e.g., Streamlit Cloud] (if hosted)
+- **Author**: Anuj omer
+- **Demo**: https://anujomer21-ai-pr-review-app-5f3k29.streamlit.app
 
 ---
 
